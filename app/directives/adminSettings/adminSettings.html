@@ -1,0 +1,32 @@
+<div>
+	<h1>Admin Settings</h1>
+	<!--Modification of carousel to be displayed-->
+	<!--Tabbed Pane-->
+	<table>
+		<tr>
+			<td>
+				<input type="button" value="Modifications" ng-click="ChangeMode(1)" />
+			</td>
+			<td>
+				<input type="button" value="Users Management" ng-click="ChangeMode(2)" />
+			</td>
+		</tr>
+	</table>
+
+	<table>
+		<tr ng-if="(mode==1)?true:false">
+			<td>
+				<h1>Modification</h1>
+				<!--this here is for modification-->
+				<!--create a component for modification tabbed-->
+			</td>
+		</tr>
+		<tr ng-if="(mode==2)?true:false">
+			<td>
+				<h1>User Settings</h1>
+				<!--create a component for User Settings tabbed-->	
+			</td>
+		</tr>
+	</table>
+
+</div>

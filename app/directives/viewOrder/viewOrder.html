@@ -1,0 +1,88 @@
+<div>
+	<h1>View Orders</h1>
+	<div>
+		<!--this part here is for editing and deleting orders-->
+		<table style="width:400px; height:400px;" ng-if="(mode2 != 1)?true:false" >
+			<tr>
+				<!--Displays Order-->
+				<td>
+					<table style="width:100px; overflow-x:scroll">
+						<tr>
+							<td>
+								<p>Username</p>
+							</td>
+							<td>
+								<p>Status</p>
+							</td>
+						</tr>
+						<tr ng-repeat="item in orders">
+							<td>
+								<a ng-click="Orders_OnClicked(item.items)">{{item.username}}</a>
+							</td>
+							<td>
+								<p>
+									<span ng-if="(item.isProcessed == true)?true:false">Complete</span> 
+									<span ng-if="(item.isProcessed == false)?true:false">Incomplete</span>
+								</p>
+							</td>
+						</tr>
+					</table>	
+				</td>
+				<!--items in a order-->
+				<td>
+					<div style="width:300px;">
+						<table ng-if=(items.count!=0)?true:false>
+							<tr ng-repeat="item in items">
+								<td>
+									<p>{{item.item}}</p>
+								</td>
+								<td>
+									<p>{{item.quantity}}</p>
+								</td>
+								<td>
+									<p>{{item.cost}}</p>
+								</td>
+								<td ng-if="(mode2==3)?true:false">
+									<input type="button" value="DELETE" />
+								</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<!--this section is for adding order from user-->
+		<div ng-if="(mode2==1)?true:false">
+			<table>
+				<tr>
+					<td>
+						<table>
+							<tr>
+								<td>
+									<p>{{selectedItem.item}}</p>	
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<!--Put Description Here in the item-->
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="text" placeholder="Quantity" ng-model="quantity"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="button" value="Add To Cart" ng-click="AddNewOrder()" />
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+
+	</div>
+</div>

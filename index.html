@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ngStarterKit</title>
+
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
+</head>
+<body>
+    
+    <navbar></navbar>
+    <div ng-view></div>
+
+    <!-- Required libraries -->
+    <script src="libs/angularjs/angular.min.js"></script>
+    <script src="libs/angularjs/angular-route.min.js"></script>
+    <!-- Services -->
+
+    <!-- Directives -->
+    <script src="app/directives/navbar/css/navbar.css"></script>
+    <script src="app/directives/navbar/navbar.js" ></script>
+    <script src="app/directives/modifyNews/modifyNews.js"></script>
+    <script src="app/directives/viewOrder/viewOrder.js"></script>
+    <script src="app/directives/adminSettings/adminSettings.js"></script>
+    <script src="app/directives/testDirective/testDirective.js"></script>
+    <script src="app/directives/cartComponent/cartComponent.js"></script>
+
+    <!-- Modules -->
+    <link rel="stylesheet" href="app/modules/dashboard/css/dashboard.css">
+    <script src="app/modules/dashboard/module.js"></script>
+    <script src="app/modules/dashboard/DashboardCtrl.js"></script>
+
+    <!-- Startup code -->
+    <script src="app/app.js"></script>
+
+</body>
+</html>
