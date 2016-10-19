@@ -19,6 +19,7 @@ angular
                 'directives.adminSettings',
                 'directives.testDirective',
                 'directives.cartComponent',
+                'directives.userModification',
                 /* Modules */
                 'modules.dashboard',
             ])

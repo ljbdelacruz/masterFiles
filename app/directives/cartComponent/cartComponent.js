@@ -32,11 +32,15 @@ angular.module('directives.cartComponent', [])
         scope.CancelOrders=function(){
             alert("Cancel Order");
         };
+        
 
     }
     return {
         restrict: 'E',
         replace: true,
+        scope:{
+            cCart:'='
+        },
         //change path if will be used on other projects
         templateUrl: 'app/directives/cartComponent/cartComponent.html',
         compile: function(scope, element, attr) {
