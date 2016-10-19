@@ -1,0 +1,21 @@
+todo:
+	-Inbox Side
+		-make sure that contacts from guest can send message to database
+		-enable adding new messages 
+	-News
+		-make add,edit and delete of news fully working
+		-beautify UI table for news
+	-Cart
+		-make sure cart functionality is fully working
+	-admin settings
+		-identify what to put there so far i can only think of user management
+	-Order
+		-make sure everything is working 
+		-create a directive for viewing orderHistory for customer
+	-Franchise 
+		-still no data yet
+
+
+
+
+<input type="button" value="DELETE" ng-click="ChangeModes(2)" ng-disabled="isDeleteEnable" class="btn btn-md btn-hover btn-success">
