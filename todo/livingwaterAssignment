@@ -1,7 +1,10 @@
 todo:
 	-Inbox Side
 		-make sure that contacts from guest can send message to database
-		-enable adding new messages 
+		-enable adding new messages
+		-respond:
+			-created a directive called createMessage add it into the project
+			-will be creating a service for saving new message to database 
 	-News
 		-make add,edit and delete of news fully working
 		-beautify UI table for news

@@ -20,6 +20,7 @@ angular
                 'directives.testDirective',
                 'directives.cartComponent',
                 'directives.userModification',
+                'directives.createMessage',
                 /* Modules */
                 'modules.dashboard',
             ])
