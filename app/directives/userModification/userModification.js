@@ -12,8 +12,7 @@ angular.module('directives.userModification', [])
     function postFn(scope, element, attr) {
         scope.users=[{user:{username:'ljbdelacruz', password:'johnny05'}, isSelected:false}];
         scope.enableEdit=false;
-
-
+        scope.selectedUser={username:'', password:''};
         //view part
         scope.Button_OnClicked=function(option, user){
             switch(option){
@@ -29,6 +28,7 @@ angular.module('directives.userModification', [])
                     break;
             }
         };
+        //this method does the deletion of users
         scope.DeleteUsers=function(){
             var lUser=[];
             for(var i=0; i<scope.users.length; i++){
