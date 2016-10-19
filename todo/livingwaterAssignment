@@ -16,6 +16,11 @@ todo:
 		-still no data yet
 
 
+	-Home 
+		-add a carousel in home and in settings you can customize the 
+		 images that will be displayed in it.
+
+
 
 
 <input type="button" value="DELETE" ng-click="ChangeModes(2)" ng-disabled="isDeleteEnable" class="btn btn-md btn-hover btn-success">
