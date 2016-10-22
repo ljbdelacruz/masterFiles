@@ -14,19 +14,16 @@ angular
                 'ngRoute',
                 /* Directives */
                 'directives.navbar',
-                'directives.modifyNews',
-                'directives.viewOrder',
-                'directives.adminSettings',
-                'directives.testDirective',
-                'directives.cartComponent',
-                'directives.userModification',
-                'directives.createMessage',
+                'directives.sectionComponents',
+                /*Sub Directives*/ 
+                'directives.servicesOffered',
+                'directives.portfolioSection',
                 /* Modules */
                 'modules.dashboard',
             ])
             .config(['$routeProvider',
                      function($routeProvider) {
-                $routeProvider.otherwise({ redirectTo : '/Dashboard' });
+                $routeProvider.otherwise({ redirectTo : '/' });
             }]);
 
         /* Start the angular app */
