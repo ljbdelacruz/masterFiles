@@ -1,9 +1,11 @@
 'use strict';
 
 /* Create module for navbar directive */
-angular.module('directives.sectionComponents', []).directive('sectionComponents',
+angular.module('directives.aboutSection', [])
+.directive('aboutSection',
            ['$http',
-            function($http) {
+            '$location',
+            function($http, $location) {
     function preFn(scope, element, attr) {
         /* TODO: Do something here before post function */
     }
@@ -14,7 +16,7 @@ angular.module('directives.sectionComponents', []).directive('sectionComponents'
         restrict: 'E',
         replace: true,
         //change path if will be used on other projects
-        templateUrl: 'app2/directives/SectionComponents/sectionComponents.html',
+        templateUrl: 'app2/directives/subdirectives/aboutSection/aboutSection.html',
         compile: function(scope, element, attr) {
             return {
                 pre: preFn,

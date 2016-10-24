@@ -18,6 +18,9 @@ angular
                 /*Sub Directives*/ 
                 'directives.servicesOffered',
                 'directives.portfolioSection',
+                'directives.teamSection',
+                'directives.contactSection',
+                'directives.footerSection',
                 /* Modules */
                 'modules.dashboard',
             ])
