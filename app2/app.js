@@ -19,6 +19,7 @@ angular
                 'directives.servicesOffered',
                 'directives.portfolioSection',
                 'directives.teamSection',
+                'directives.aboutSection',
                 'directives.contactSection',
                 'directives.footerSection',
                 /* Modules */
