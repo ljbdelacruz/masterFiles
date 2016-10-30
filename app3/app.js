@@ -14,6 +14,7 @@ angular
                 'ngRoute',
                 'directives.navbar',
                 'directives.loginComponent',
+                'directives.registrationComponent',
                 'modules.login',
             ])
             .config(['$routeProvider',

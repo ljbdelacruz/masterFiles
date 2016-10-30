@@ -10,6 +10,11 @@ angular.module('directives.registrationComponent', [])
             }
             /* Do the directive's logic here */
             function postFn(scope, element, attr) {
+                scope.months = [{ month: 'Jan' }, { month: 'Feb' }, { month: 'Mar' },
+                    { month: 'Apr' }, { month: 'May' }, { month: 'Jun' },
+                    { month: 'Jul' }, { month: 'Aug' }, { month: 'Sept' },
+                    { month: 'Oct' }, { month: 'Nov' }, { month: 'Dec' }
+                ];
                 scope.username = "";
                 scope.password = "";
                 scope.isShowPassword = false;

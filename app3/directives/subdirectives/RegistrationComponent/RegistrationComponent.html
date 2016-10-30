@@ -2,22 +2,102 @@
     <table>
         <tr>
             <td>
-                <input type="text" placeholder="Username" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="text" placeholder="Password" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="text" placeholder="Re-Type Password" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="button" value="REGISTER" />
+                <table>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="text" placeholder="Username" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" placeholder="Password" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" placeholder="Re-Type Password" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select>
+                                            <option>Philippines</option>
+                                            <option>United States</option>
+                                            <option>Brazil</option>                                                                                        
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <!--Verification code component-->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="button" value="REGISTER" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="text" placeholder="Firstname" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" placeholder="Middlename" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" placeholder="Lastname" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <h4>Date Of Birth:</h4>
+                                                </td>
+                                                <td>
+                                                    <select>
+                                                            <option ng-repeat="month in months">{{month.month}}</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <input type="text" placeholder="DD" style="width:30px;" />
+                                                </td>
+                                                <td>
+                                                    <input type="text" placeholder="YYYY" style="width:40px;" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" placeholder="Email Address" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
             </td>
         </tr>
     </table>
