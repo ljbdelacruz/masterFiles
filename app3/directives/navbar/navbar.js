@@ -10,7 +10,7 @@ angular.module('directives.navbar', [])
             }
             /* Do the directive's logic here */
             function postFn(scope, element, attr) {
-
+                scope.isLogin = false;
             }
             return {
                 restrict: 'E',

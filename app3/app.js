@@ -16,6 +16,7 @@ angular
                 'directives.loginComponent',
                 'directives.registrationComponent',
                 'modules.login',
+                'modules.dashboard',
             ])
             .config(['$routeProvider',
                 function($routeProvider) {
