@@ -8,11 +8,22 @@
     <script src="libs/angularjs/jquery.min.js"></script>
     <script src="libs/angularjs/angular.min.js"></script>
     <script src="libs/angularjs/angular-route.min.js"></script>
-
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet" />
+    <!--this link is for making carousel work-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 20%;
+            margin: auto;
+        }
+    </style>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script> -->
-
     <link rel="stylesheet" type="text/css" href="app2/directives/SectionComponents/sectionComponents.css">
 </head>
 
@@ -58,10 +69,19 @@
     <script src="app3/directives/subdirectives/LoginComponent/LoginComponent.js"></script>
     <script src="app3/directives/subdirectives/RegistrationComponent/RegistrationComponent.js"></script>
 
+    <!--directives of template 1-->
+    <script src="app3/directives/subdirectives/template1/directives/navbar/navbar.js"></script>
+    <script src="app3/directives/subdirectives/template1/directives/carousel/carouselImage.js"></script>
+
     <script src="app3/modules/LoginModules/modules.js"></script>
     <script src="app3/modules/LoginModules/LoginCtrl.js"></script>
     <script src="app3/modules/dashboard/modules.js"></script>
     <script src="app3/modules/dashboard/DashboardCtrl.js"></script>
+    <script src="app3/modules/websiteChooser/modules.js"></script>
+    <script src="app3/modules/websiteChooser/websiteChooser.js"></script>
+    <script src="app3/modules/template1/modules.js"></script>
+    <script src="app3/modules/template1/template1.js"></script>
+
 
     <script src="app3/app.js"></script>
 </body>

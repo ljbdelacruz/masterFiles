@@ -15,12 +15,15 @@ angular
                 'directives.navbar',
                 'directives.loginComponent',
                 'directives.registrationComponent',
+                'directives.carouselImage',
                 'modules.login',
                 'modules.dashboard',
+                'modules.websiteChooser',
+                'modules.template1',
             ])
             .config(['$routeProvider',
                 function($routeProvider) {
-                    $routeProvider.otherwise({ redirectTo: '/Login' });
+                    $routeProvider.otherwise({ redirectTo: '/Websites' });
                 }
             ]);
         /* Start the angular app */

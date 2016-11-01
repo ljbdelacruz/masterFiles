@@ -1,0 +1,24 @@
+<div ng-controller="WebsitesCtrl">
+    <table>
+        <tr>
+            <td ng-repeat="web in websites">
+                <a ng-click="gotoWebsite(web.path)">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="{{web.imgSrc}}" style="width:200px; height:200px;" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center>
+                                    <h3>{{web.name}}</h3>
+                                </center>
+                            </td>
+                        </tr>
+                    </table>
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
